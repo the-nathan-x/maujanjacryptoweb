@@ -51,10 +51,31 @@
     </script>
 
 
+    <script>
+           function go() {
+          
+          if (window.location.protocol == 'http:') {
+   
+          console.log("you are accessing us via "+  "an insecure protocol (HTTP). " + "Redirecting you to HTTPS.");
+        
+          window.location.href = window.location.href.replace('http:', 'https:');
+              }
+          else{
+              console.log("you are accessing us via" + " our secure HTTPS protocol.");
+          }
+           
+
+        
+          //  document.getElementById("myModal").style.display = "block";
+      }
+ 
+    </script>
+
+
 
 
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
+<body onload="go()" data-spy="scroll" data-target=".fixed-top">
     
     <!-- Preloader -->
 	<div class="spinner-wrapper">
