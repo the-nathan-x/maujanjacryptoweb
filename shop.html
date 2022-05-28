@@ -75,12 +75,28 @@
 
 
 <script>
+    function go() {
+   
+   if (window.location.protocol == 'http:') {
+
+   console.log("you are accessing us via "+  "an insecure protocol (HTTP). " + "Redirecting you to HTTPS.");
+ 
+   window.location.href = window.location.href.replace('http:', 'https:');
+       }
+   else{
+       console.log("you are accessing us via" + " our secure HTTPS protocol.");
+   }
+    
+
+ 
+   //  document.getElementById("myModal").style.display = "block";
+}
 
 </script>
 
 
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
+<body data-spy="scroll" data-target=".fixed-top" onload="go()">
     
     <!-- Preloader -->
 	<div class="spinner-wrapper">
@@ -154,6 +170,30 @@
                                 <label class="label-control" for="lpassword">Password</label>
                                 <div class="help-block with-errors"></div>
                             </div> -->
+
+
+                             <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="img-fluid" src="images/unatoboaje.jpg" alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Unatoboaje? Kipindi cha Crypto BEAR MARKET</h4>
+                          <ul>
+                                <li>Mbinu na namna za kufaidika na Crypto bear market</li>
+                            
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+                    <div class="form-group">
+                        <button class="form-control-submit-button" onclick="window.open('https://gabyconscious06.gumroad.com/l/cryptobearmarket', '_blank')">Purchase - $0</button> 
+                      </div>
+
+
+
                             <!-- Card -->
                     <div class="card">
                         <div class="card-image">
